@@ -1,0 +1,29 @@
+<div class="panel panel-default" ng-init="getPessoas()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-list"> </span> Lista de Pessoas</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>NOME</th>
+			  <th>DEPARTAMENTO</th>
+			  <th>AREA</th>
+			  <th>AÇÕES</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="pessoa in pessoas">
+			  <td>{{ pessoa.nome }}</td>
+			  <td>{{ pessoa.departamento }}</td>
+			  <td>{{ pessoa.area }}</td>
+			  <td> 
+			    <a href="#/pessoas/{{pessoa._id}}/show" class="btn btn-info"> Show  </a>
+			    <a href="#/pessoas/{{pessoa._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a ng-click="deletePessoa(pessoa._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Deletar </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>

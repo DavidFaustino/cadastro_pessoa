@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-init="showPessoa()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Detalhe das Informações da Pessoa</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Nome: {{ pessoa.nome }}</label>
+		 <label class="form-control">Departamento: {{ pessoa.departamento }}</label>
+		 <label class="form-control">Area: {{ pessoa.area }}</label>
+		 <label class="form-control">Job Cargo: {{ pessoa.cargo }}</label>
+		 <label class="form-control">Contato: {{ pessoa.contato }}</label>
+		 <label class="form-control">Salario: {{ pessoa.salario }}</label>
+		 <label class="form-control">ID: {{ pessoa._id }}</label>
+		<a href="#/pessoas" class="btn btn-default"> Cancelar</a>
+		</div>
+	</form>		
+    <div>
+<div>

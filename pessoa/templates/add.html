@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Add Nova pessoa</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addPessoa()">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" ng-model="pessoa.nome">
+    </div>
+    <div class="form-group">
+      <label for="departamento">Departamento:</label>
+      <input type="text" class="form-control" id="departamento" ng-model="pessoa.departamento">
+    </div>
+    <div class="form-group">
+      <label for="area">Area:</label>
+      <input type="text" class="form-control" id="area" ng-model="pessoa.area">
+    </div>
+    <div class="form-group">
+      <label for="contato">Contato No. :</label>
+      <input type="text" class="form-control" id="contato" ng-model="pessoa.contato">
+      <div class="form-group">
+      <label for="cargo">Cargo :</label>
+      <input type="text" class="form-control" id="cargo" ng-model="pessoa.cargo">
+      <div class="form-group">
+      <label for="salario">Salario :</label>
+      <input type="text" class="form-control" id="salario" ng-model="pessoa.salario">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Salvar</button>
+    <a href="#/pessoas" class="btn btn-default"> Cancelar</a>
+</form>		
+    <div>
+<div>
